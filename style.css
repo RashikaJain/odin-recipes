@@ -1,0 +1,81 @@
+*
+{
+    margin:0 ; 
+    padding: 0; 
+}
+
+
+header ul {
+    background-color: whitesmoke ; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    height: 80px; /* Set a fixed height to control alignment */
+}
+
+header ul li {
+    opacity : 1.0 ; 
+    float: left;
+    height: 100%;
+}
+
+header ul li a, header .description-box , i.fa-solid  {
+    text-decoration: none;
+    display: block;
+    font-size: 1em ;
+    color: rgb(72, 72, 72);
+    padding: 0 50px; /* Horizontal padding for spacing */
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px; /* Matches the height of the header for vertical centering */
+}
+
+img.logo {   
+    margin-right: 50em ;
+    margin-left: 3em;
+    vertical-align: middle;
+    max-width: 60px;
+    height: auto;
+    position:relative;
+    top: 10px ; 
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 1 0px 16px  rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f3f3f3;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red; /* Set underline color */
+    text-decoration-thickness: 3px; /* Set underline thickness */
+    text-underline-offset: 5px; /* Adjust the space between text and underline */
+}
+
+
+
