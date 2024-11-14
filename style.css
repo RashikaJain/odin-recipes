@@ -14,15 +14,19 @@ header ul {
     height: 80px;
 }
 
+/* Default state for the dropdown-2 menu */
+li.fun-to-lek .dropdown-2-content {
+    display: none; /* Start with dropdown hidden */
+}
+
 header ul li {
     opacity: 1.0;
     float: left;
     height: 100%;
 }
 
-.fa-bars
-{
-    display:none;
+.fa-bars {
+    display: none; /* Hidden by default, shown on mobile */
 }
 
 header ul li a,
@@ -54,24 +58,26 @@ img.logo {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown:hover .dropdown-content a:hover {
-    background-color:rgb(231, 226, 226);
-    text-decoration: none ; 
-}
-
 
 header ul li a:hover {
     text-decoration: underline;
     text-decoration-color: red;
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
+}
+
+.dropdown-content a:hover
+{ 
+    background-color : #bab7b7;  
+    text-decoration  :none;  
+
 }
 
 /* Styling for headings and paragraphs */
@@ -93,37 +99,79 @@ p.para-top-1 {
     text-align: center;
 }
 
-/* Responsive styles for screens smaller than 600px */
-
-@media screen and (max-width: 1500px) {
-    header ul li i.fa-bars {
-        display : inline ;
-        color : #e61212 ; 
-        text-decoration: none;
-        font-size: 1.2em;
-        padding: 0 50px;
-        font-weight: bold;
-        text-align: center;
-        line-height: 80px;  
-    }
-    header ul li.bars-class 
+@media screen and (max-width: 1250px) {
+   
+    .common-li-list
     {
-        float: left ; 
+        display : none ; 
     }
 
-    .common-li-list  {
-        display: none; 
-    }
-     
-     li.dropdown
-     {
-          display : none ; 
-     }
 
-    .logo {
-        margin-right: 35px;
+    li.fun-to-lek
+    {
+        opacity: 1.0;
+        float: left;
+        height: 100%;
+    }
+    li.fun-to-lek i.dropbtn 
+    {
+        text-decoration: none;
+        display: block;
+        font-size: 1.2em;
+        padding: 0 7px;
+        text-align: center;
+        line-height: 80px;
+    }
+    .fa-magnitying-glass , .search-bar
+    {
+        padding : 0 7px ; 
+    }
+    .dropdown-2 
+    {
+        display : inline-block ; 
     }
 
+    li.fun-to-lek .dropdown-2-content 
+    {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; 
+    }
+    .dropdown-2-content a 
+    {
+        color : black ;
+        display : block ; 
+        text-decoration: none;
+        text-align : left ; 
+        padding  :12px 13px ;
+    }
+
+    #search-bar
+    {
+        padding : 0 ;
+        margin : 0 ; 
+    }
+
+    .fun-to-lek:hover .dropdown-2-content
+    {
+        display : block; 
+    }
+    .dropdown-2-content:hover{
+        background-color: #e3e1e1;
+    }
+
+
+img.logo {
+    margin-right: 60px;
+    margin-left: 1em;
+    vertical-align: middle;
+    max-width: 70px;
+    height: auto;
+    position: relative;
+    top: 6px;
 }
 
-
+}

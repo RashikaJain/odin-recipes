@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
     <meta name="description" content="Discover a world of expertly crafted recipes where flavors blend seamlessly to create unforgettable taste experiences">
     <script src="https://kit.fontawesome.com/7348b0e260.js" crossorigin="anonymous"></script>
+    <link href="image.css" rel="stylesheet">
     
     <title>odin-recipes</title>
     <link href="style.css" rel="stylesheet">
@@ -13,47 +14,119 @@
 <body>
     <header>
         <ul>
-           <li> <img src="/logos/Preview.png"  class="logo"></li>
-            <li><a href="#home" class="common-li-list" >Home</a> </li>
-            <li><a href="#Contact" class="common-li-list">Contact</a> </li>
-            <li class="dropdown" class="common-li-list"><a href="#Description" class="description-box" class="common-li-list">Our Dishes</a>
+            <!-- Logo -->
+            <li><img src="/logos/Preview.png" class="logo"></li>
+            
+            <!-- Regular Navigation Links (Visible on large screens) -->
+            <li><a href="#home" class="common-li-list">Home</a></li>
+            <li><a href="#Contact" class="common-li-list">Contact</a></li>
+
+
+            <li class="dropdown common-li-list">
+                <a href="#Description" class="description-box common-li-list">Our Dishes</a>
                 <div class="dropdown-content">
                     <a href="odin-recipes">All-recipes</a>
                     <a href="odin-soups">The Soup Dhamaka</a>
                     <a href="loved-recipes">New Comers</a>
                 </div>
             </li>
-            <li><a href="About" class="common-li-list">About</a> </li>
-           <li> <span ><input type="search" id="search-bar" style="display:none; height: 1.5em ; " placeholder="Search here"></span> <i class="fa-solid fa-magnifying-glass"  style="color: #b42d3a; display:inline ;" onclick="show()" ></i></li>
-          <li class="bars-class"><i class="fa-solid fa-bars"></i></li>
+
+            
+            <li><a href="About" class="common-li-list">About</a></li>
+            
+            <!-- Search Icon (Shows input field on click) -->
+            <li>
+                <span><input type="search" id="search-bar" style="display:none; height: 1.5em; padding : 13px 10px 10px 13px ; " placeholder="Search here"></span>
+                <i class="fa-solid fa-magnifying-glass" style="color: #b42d3a; display:inline;" onclick="show()"></i>
+            </li>
+              
+           <li class="fun-to-lek">
+               
+            <i class="fa-solid fa-bars dropbtn" id="bars" style="color: #b42d3a; padding-left:3px;"></i>
+                
+              
+                <div class="dropdown-2-content">
+                    <a href="home.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="description.html">Description</a>
+
+            </div>
+            </li>
         </ul>
-         
-         
-
     </header>
-    <section>
-    <h1 class="heads">From Our Kitchen to Yours</h1>
-    <p class="para-top-1">because everyone deserves a little slice of deliciousness!</p>
-    <img src="../images/side-lamb-ragout-with-fried-onion-carrot-tomato-sauce-greens-vegetable-salad-table_141793-4744.avif" alt="welcome pic" width="700" height="500">
 
-    <ul>
-        <li><a href="recipes/gulabjamun.html" target="_blank"> Gulab Jamun!</a></li>
-        <li><a href="recipes/kesar-milk.html" target="_blank"> The Perfect Kesar Milk</a></li>
-        <li><a href="recipes/sahi-paneer.html" target="_blank"> Sahee Paneer</a></li>
-        
-    </ul>
+    <section>
+        <h1 class="heads">From Our Kitchen to Yours</h1>
+        <p class="para-top-1">because everyone deserves a little slice of deliciousness!</p>
     </section>
 
-    <script>
-         function show() {
-        var s = document.getElementById("search-bar");
-        if (s.style.display === "none" || s.style.display === "") {
-            s.style.display = "inline";
-        } else {
-            s.style.display = "none";
-        }
-    }
-    </script>
+    <div class="image-float">
+       <a href="..recipes/kesar-milk.html"> <img src="/images/bowl-8991043_1280.jpg" alt="recipes"></a>
+        <div class="recipe-description">
+            <h3>Indian Recipes</h3>
+            <p>Craving flavor? We've got it in spades. From samosas that'll make you swoon to curries so good you might consider moving in, our dishes don,t just satisfy - they impress. Warning: side effects may include random dancing, spontaneous spice addiction, and an undeniable urge to come back for more.</p>
+        </div>
+    </div>
 
+    <div class="image-float">
+        <a href="recipes/sahi-paneer.html"> <img src="/images/cake-1850011_1280.jpg" alt="recipes"></a>
+        <div class="recipe-description">
+            <h3>Desert Delightness</h3>
+            <p>From the perfect melt-in-your-mouth peda to the luxurious taste of homemade kulfi, these recipes will take you from novice to sweet-making master in no time. And here's a bonus: your kitchen will smell so good, you might have a line of dessert-loving friends at the door!</p>
+        </div>
+    </div>
+
+    <div class="image-float">
+        <a href="/recipes/kesar-milk.html"><img src="/images/ice-cream-4894276_1280.jpg" alt="recipes"></a>
+        <div class="recipe-description">
+            <h3>Ice-Creams chillin</h3>
+            <p>Why settle for store-bought when you can make your own ice cream at home? Dive into our easy, fun recipes that bring the perfect mix of creamy, smooth, and sweet right to your freezer. From classic vanilla to exotic mango and pistachio, these recipes are made to beat the heat and satisfy every craving.</p>
+        </div>
+    </div>
+
+    <div class="image-float">
+        <a href="recipes/sahi-paneer.html"><img src="/images/noodles-8021415_1280.png" alt="recipes">
+        <div class="recipe-description"></div>
+            <h3>Junk Food or Jungkook?WE don't judge either way!!</h3>
+            <p>Why just satisfy your cravings when you could also win big? Snap a selfie with a dish from our junk food recipes and send it our way and you'll get a chance to win a Jungkook album! Yes, you heard right - delicious junk food AND a shot at BTS swag?  let's see your best 'foodie meets ARMY' photo. </p>
+        </div>
+    </div>
+
+    <div class="image-float">
+        <a href="recipes/kesar-milk.html"> <img src="/images/shake-4751813_1280.jpg" alt="recipes"></a>
+        <div class="recipe-description">
+            <h3>Shake It Like You Mean It!</h3>
+            <p>Why sip when you can shake? Grab your blender and let's turn up the fun! From chocolate to strawberry, these shakes are so good, they might just make you dance. Blend, sip, repeat - who knew happiness could be this creamy? Try our newest recipe and flex in front of your friends making and learning new recipes . </p>
+        </div>
+    </div>
+
+    <div class="image-float">
+        <a><img src="/images/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.jpg" alt="recipes"></a>
+        <div class="recipe-description" style="color : black ; ">
+            <h3>Desi Dishes with Videsi tadka</h3>
+            <p>Craving for some good food!! Get ready to spice up your life with a mix of traditional Indian flavors and a fun international twist!  It's the best of both worlds on your plate! Perfect for those who love a little fusion in their feast, so bring your appetite and prepare for a flavor adventure!</p>
+        </div>
+    </div>
+
+    <div class="all-images-holder"> </div>
+
+    <ul class="imp-links">
+        <li><a href="recipes/gulabjamun.html" target="_blank">Gulab Jamun!</a></li>
+        <li><a href="recipes/kesar-milk.html" target="_blank">The Perfect Kesar Milk</a></li>
+        <li><a href="recipes/sahi-paneer.html" target="_blank">Sahee Paneer</a></li>
+    </ul>
+
+    <script>
+        // Toggle the visibility of the search bar when clicking the magnifying glass icon
+        function show() {
+            var s = document.getElementById("search-bar");
+            if (s.style.display === "none" || s.style.display === "") {
+                s.style.display = "inline";
+            } else {
+                s.style.display = "none";
+            }
+        }
+          
+    </script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+*
+{
+    margin : 0 ; 
+    padding :0 ; 
+}
+
+.image-float
+{
+    float : left; 
+    padding : 6px 25px ; 
+    margin : 15px;  
+    width : 552px; 
+    text-align : center ; 
+    border  :2px solid #838282 ; 
+    transition : width  2s ease-in ;
+}
+img[alt*="recipes"]
+{
+
+    height : 500px ; 
+    width  : 100%;  
+}
+
+.image-float a
+{
+    text-decoration: none;
+    color  :black ; 
+}
+
+.recipe-description h3
+{
+    text-decoration :none; 
+    display : block ; 
+    color : #3e3e3e!important ; 
+
+}
+.recipe-description p
+{
+    text-decoration :none; 
+    display : block ; 
+    color : #7a7878 ;   
+}
+
+.imp-links
+{
+     clear : both ;   
+}
+
+.image-float:hover
+{
+    border : 2px solid black ;  
+    width : 555px; 
+    box-shadow : 1px 2px 7px 2px rgb(233, 132, 132);   
+}.image-float:hover .recipe-description h3
+{
+    color : black!important ; 
+}
+
+.image-float:hover .recipe-description p 
+{
+    color : #3e3e3e ; 
+}
+
+@media screen and (max-width : 800px)
+{
+    div.image-float
+    {
+        width : 30% ; 
+        height : 40% ; 
+        padding : 0 ; 
+        margin  : 0 ;  
+    }
+    div.image-float:hover
+    {
+        width : 40
+        .1% ;
+    }
+}
+
+@media only screen and (max-width : 500px)
+{
+    div.image-float
+    {
+         
+        width :98% ; 
+        height : auto; 
+        padding : 0 ; 
+        margin  : 0 ; 
+    }
+    div.image-float:hover
+    {
+        width : 100% ; 
+    }
+}
+
+
+
+
