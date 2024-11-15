@@ -65,8 +65,8 @@ img[alt*="recipes"]
 {
     div.image-float
     {
-        width : 30% ; 
-        height : 40% ; 
+        width : 32% ; 
+        height :auto ; 
         padding : 0 ; 
         margin  : 0 ;  
     }
@@ -95,4 +95,34 @@ img[alt*="recipes"]
 
 
 
+.pagination
+{
+    display : block; 
+    position:relative;
+    left:50%;
+    margin-left : auto ; 
+    margin-right : auto; 
+}
+.pagination a
+{
+    float : left ; 
+    color : black ; 
+    border : 1px solid #b9b7b7;
+    text-align : center ; 
+    font-family: "Roboto", sans-serif;
+    font-size  : 20px ; 
+    margin : 5px;  
+    padding : 8px ; 
+    text-align : center ; 
+    text-decoration : none ;
+}
 
+
+.pagination a:hover
+{
+    color : red ; 
+}
+.pagination a:focus 
+{
+    background-color:rgba(232, 120, 120, 0.5);
+}
