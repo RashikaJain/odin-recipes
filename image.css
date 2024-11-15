@@ -9,7 +9,7 @@
     float : left; 
     padding : 6px 25px ; 
     margin : 15px;  
-    width : 552px; 
+    width : 550px; 
     text-align : center ; 
     border  :2px solid #838282 ; 
     transition : width  2s ease-in ;
@@ -49,7 +49,7 @@ img[alt*="recipes"]
 .image-float:hover
 {
     border : 2px solid black ;  
-    width : 555px; 
+    width : 553px; 
     box-shadow : 1px 2px 7px 2px rgb(233, 132, 132);   
 }.image-float:hover .recipe-description h3
 {
@@ -125,4 +125,69 @@ img[alt*="recipes"]
 .pagination a:focus 
 {
     background-color:rgba(232, 120, 120, 0.5);
+}
+
+
+div.content-articles
+{
+    clear : both ; 
+    display : flex ; 
+    flex-direction:row ; 
+    flex-wrap : wrap ; 
+    justify-content : center ; 
+    align-content  :center ; 
+    color : black ; 
+    animation : text-animate 4s ease-in 6s 2 ;
+    animation-direction : alternate ;  
+}
+
+@keyframes text-animate
+{
+    0%{opacity : 0 ;  }
+    75%{opacity : 0.7 ; }
+    100%{opacity : 1.0  ;}
+
+}
+
+.content-articles
+{
+    background-color : #f2f0f0 ;
+    height: auto ; 
+    margin-top :auto ;
+    margin-bottom : auto ; 
+}
+
+.content-articles article
+{
+    width : 30% ;
+    padding: 38px;  
+    margin: 4px ;
+    margin-top : 200px ; 
+    margin-bottom: 45px;
+    border  : 2px solid rgb(146, 145, 145) ;
+    border-radius : 12px ;
+    text-align : center ; 
+}
+
+.content-articles articles img[src*="images"]
+{
+    width : 400px ; 
+    height : 400px ; 
+}
+
+.content-articles article h3
+{
+    color : rgb(45, 44, 44) ; 
+}
+
+.content-articles article p
+{
+    color : rgb(85, 84, 84) ;   
+}
+
+.imp:hover
+{
+    color :  rgb(202, 96, 96)!important ;  
+    text-decoration: underline!important;
+
 }
