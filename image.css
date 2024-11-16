@@ -137,7 +137,7 @@ div.content-articles
     justify-content : center ; 
     align-content  :center ; 
     color : black ; 
-    animation : text-animate 4s ease-in 6s 2 ;
+    animation : text-animate 4s ease-in 6s 1 ;
     animation-direction : alternate ;  
 }
 
@@ -190,4 +190,17 @@ div.content-articles
     color :  rgb(202, 96, 96)!important ;  
     text-decoration: underline!important;
 
+}
+
+.art-for-article
+{
+    animation : name-move 5s linear 4s 3;
+}
+
+@keyframes name-move
+{
+    from{font-size: 2.5rem ; 
+        margin-top : 2rem ; }
+    to{font-size: 3rem ;
+    margin-top :2rem}
 }
