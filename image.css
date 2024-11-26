@@ -14,7 +14,7 @@ body
     float : left; 
     padding : 6px 25px ; 
     margin : 15px;  
-    width : 550px; 
+    width : 546px; 
     text-align : center ; 
     border  :2px solid #838282 ; 
     transition : width  2s ease-in ;
@@ -54,7 +54,7 @@ img[alt*="recipes"]
 .image-float:hover
 {
     border : 2px solid black ;  
-    width : 553px; 
+    width : 548px; 
     box-shadow : 1px 2px 7px 2px rgb(233, 132, 132);   
 }.image-float:hover .recipe-description h3
 {
